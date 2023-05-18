@@ -6,7 +6,7 @@ class Model{
 
     private $values = [];
 
-    public function __call($name, $args){
+    public function __call($name, $args){ // cria getters e stters automaticamente
         
         $method = substr($name, 0, 3);
         $fieldName = substr($name, 3, strlen($name));
